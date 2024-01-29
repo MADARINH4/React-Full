@@ -1,15 +1,7 @@
-export default function CoreConcept(/*props*/ { title, description, image }) {
+export default function CoreConcept({ image, title, description }) {
   return (
-    //Utilizando o própio objeto
-    /*<li>
-        <img src={props.image} alt={props.title}></img>
-        <h3>{props.title}</h3>
-        <p>{props.description}</p>
-      </li>*/
-
-    //Desestruturando o objeto na passagem
     <li>
-      <img src={image} alt={title}></img>
+      <img src={image} alt={title} />
       <h3>{title}</h3>
       <p>{description}</p>
     </li>
